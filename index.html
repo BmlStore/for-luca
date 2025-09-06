@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Luca!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29 0%, #24243e 50%, #302b63 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .neon-text {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+        }
+        .glow-button {
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center text-center p-4">
+    <div class="fade-in">
+        <h1 class="text-6xl font-bold neon-text mb-4">Happy Birthday, Luca!</h1>
+        <p class="text-2xl text-white mb-6">"May your birthday be as epic as a midnight hacker's dream, blazing trails in the digital cosmos!"</p>
+        <p class="text-xl text-gray-300 mb-6">"You're the glitch in the matrix of ordinary days, turning mundane into masterful mayhem. Cheers to leveling up!"</p>
+        <p class="text-lg text-purple-300 mb-8">"From zero to hero, code-crunching through life like a boss. Here's to debugging the blues and coding pure joy!"</p>
+        
+        <div class="mb-8">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/012832c2-5c73-4e71-8182-fc03abea3f85.png" alt="Futuristic birthday cake shaped like a glowing neon city skyline with holographic fireworks exploding in purple and cyan hues against a dark starry background, featuring robotic arms holding sparklers and cybernetic details on the cake structure" class="rounded-lg shadow-lg mx-auto max-w-full h-auto" />
+        </div>
+        
+        <button id="telegramButton" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full glow-button transition duration-300">
+            PRESS IT!!
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('telegramButton').addEventListener('click', function() {
+            window.open('https://t.me/ki_solution?text=Thanks%20bro%20for%20your%20saying', '_blank');
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+
+<attempt_completion>
